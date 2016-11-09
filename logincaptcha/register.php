@@ -1,3 +1,11 @@
+<?php
+session_start();
+$_SESSION = array();
+
+include("captcha.php");
+$_SESSION['captcha'] = simple_php_captcha();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,18 +42,29 @@
 	<tr>
 	<td colspan="2"><div id="password_error" class="val_error"></div></td>
 	</tr>
-	
+	<tr>
+		<td>Verify:</td><td> 
+		
+		<?php
+		
+        echo '<img src="' . $_SESSION['captcha']['image_src'] . '" alt="CAPTCHA code">';
+
+        ?>
+		
+		</td>
+	</tr>
+	<tr><td></td>
+		<td>
+			<input type="text" id="captchasym" name="captchasym"/>
+		</td>
+	</tr>
 	<td></td>
 	<td align="right"><input type="submit" id="btn" value="Register"/></td>
 	</tr>
 	</table>
 	</form>
-	Existing users <a href="login.php"> Click here</a>
+	Existing users, to Login <a href="login.php"> Click here</a>
 </div>
-
-
-
-
 </body>
 </html>
 
