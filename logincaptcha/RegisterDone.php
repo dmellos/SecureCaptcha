@@ -22,5 +22,4 @@ $dbconn=mysqli_connect("localhost","root","","login");
 $query="insert into users values ('$email','$username','$password')";
 
 $result = mysqli_query($dbconn,$query);
-
 ?>
