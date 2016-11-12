@@ -1,11 +1,4 @@
 <?php
-//
-//  A simple PHP CAPTCHA script
-//
-//  Copyright 2011 by Cory LaViska for A Beautiful Site, LLC
-//
-//  See readme.md for usage, demo, and licensing info
-//
 function simple_php_captcha($config = array()) {
 
     // Check for GD library
