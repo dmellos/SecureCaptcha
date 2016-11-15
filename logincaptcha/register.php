@@ -121,9 +121,7 @@ $_SESSION['captcha'] = simple_php_captcha();
 			return true;
 		}
 	}
-
-
-			function emailverify(){
+		function emailverify(){
 		if (email.value != "")
 		{
 			email.style.border= "1px solid #5E6E66";
