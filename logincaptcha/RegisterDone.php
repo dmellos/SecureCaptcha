@@ -12,7 +12,6 @@
 </body>
 </html>
 <?php
-
 $username = $_POST['user'];
 $email = $_POST['email'];
 $password = $_POST['pass'];
