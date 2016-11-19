@@ -22,3 +22,6 @@ $_SESSION['captcha'] = simple_php_captcha();
 
 </body>
 </html>
+
+
+
