@@ -2,7 +2,7 @@
 session_start();
 $_SESSION = array();
 
-include("captcha.php");
+include ("captcha.php");
 $_SESSION['captcha'] = simple_php_captcha();
 
 ?>
