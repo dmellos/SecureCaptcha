@@ -75,8 +75,7 @@ $_SESSION['captcha'] = simple_php_captcha();
 
 	var username_error=document.getElementById("username_error");
 	var email_error=document.getElementById("email_error");
-	var password_error=document.getElementById("password_error");
-	
+	var password_error=document.getElementById("password_error")
 
 	username.addEventListener("blur",usernameverify,true);
 	email.addEventListener("blur",emailverify,true);
