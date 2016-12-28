@@ -6,7 +6,6 @@ function simple_php_captcha($config = array()) {
     }
     $bg_path = dirname(__FILE__) . '/backgrounds/';
     $font_path = dirname(__FILE__) . '/fonts/';
-
     // Default values
     $captcha_config = array(
         'code' => '',
