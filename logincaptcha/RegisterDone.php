@@ -16,7 +16,7 @@ $username = $_POST['user'];
 $email = $_POST['email'];
 $password = $_POST['pass'];
 
-$dbconn=mysqli_connect("localhost","root","","login");
+$dbconn=mysqli_connect("localhost","username","","dbname");
 
 $query="insert into users values ('$email','$username','$password')";
 
