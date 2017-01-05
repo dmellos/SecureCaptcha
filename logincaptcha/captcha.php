@@ -1,6 +1,6 @@
 <?php
 function simple_php_captcha($config = array()) {
-    // Check for GD library
+    
     if( !function_exists('gd_info') ) {
         throw new Exception('Required GD library is missing');
     }
