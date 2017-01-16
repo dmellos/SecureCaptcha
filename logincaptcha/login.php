@@ -4,7 +4,6 @@
 <title> login system </title>
 <link rel ="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 <div id="frm">
 <form action ="process.php" method ="POST" onsubmit="return Validate()" name="valform">
