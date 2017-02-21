@@ -4,7 +4,6 @@ $_SESSION = array();
 
 include("captcha.php");
 $_SESSION['captcha'] = simple_php_captcha();
-
 ?>
 <!DOCTYPE html>
 <html>
