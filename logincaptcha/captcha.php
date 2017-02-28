@@ -40,7 +40,6 @@ function simple_php_captcha($config = array()) {
     if( is_array($config) ) {
         foreach( $config as $key => $value ) $captcha_config[$key] = $value;
     }
-
     // Restrict certain values
     if( $captcha_config['min_length'] < 1 ) $captcha_config['min_length'] = 1;
     if( $captcha_config['angle_min'] < 0 ) $captcha_config['angle_min'] = 0;
