@@ -4,7 +4,7 @@
 	<title>Completed Registration</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body> 
 <div id="frm">
 <p>Registration completed.<br> You can login now</p>
 	<a href="login.php" id="btn">Login</a>
