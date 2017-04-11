@@ -1,6 +1,6 @@
 <?php
 function simple_php_captcha($config = array()) {
-    
+  
     if( !function_exists('gd_info') ) {
         throw new Exception('Required GD library is missing');
     }  
@@ -56,7 +56,6 @@ function simple_php_captcha($config = array()) {
             $captcha_config['code'] .= substr($captcha_config['characters'], mt_rand() % (strlen($captcha_config['characters'])), 1);
         }
     }
-
     // Generate HTML for image src
     if ( strpos($_SERVER['SCRIPT_FILENAME'], $_SERVER['DOCUMENT_ROOT']) ) {
         $image_src = substr(__FILE__, strlen( realpath($_SERVER['DOCUMENT_ROOT']) )) . '?_CAPTCHA&amp;t=' . urlencode(microtime());
