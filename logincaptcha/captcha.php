@@ -34,8 +34,6 @@ function simple_php_captcha($config = array()) {
         'shadow_offset_x' => -1,
         'shadow_offset_y' => 1
     );
-
-  
   
     // Overwrite defaults with custom config values
     if( is_array($config) ) {
